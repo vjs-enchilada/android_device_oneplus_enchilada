@@ -1,6 +1,5 @@
 #
 # Copyright (C) 2018 The LineageOS Project
-# Copyright (C) 2018 The LiquidRemix Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,14 +21,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from enchilada device
 $(call inherit-product, device/oneplus/enchilada/device.mk)
 
-# Inherit some common LiquidRemix stuff.
-$(call inherit-product, vendor/liquid/config/common_full_phone.mk)
+# Inherit some common AOSiP stuff.
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
-PRODUCT_NAME := liquid_enchilada
+PRODUCT_NAME := aosip_enchilada
 PRODUCT_DEVICE := enchilada
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := ONEPLUS A6003
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
@@ -39,7 +37,9 @@ TARGET_VENDOR_DEVICE_NAME := OnePlus6
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=OnePlus6 \
     PRODUCT_NAME=OnePlus6 \
-    PRIVATE_BUILD_DESC="OnePlus6-user 9 PKQ1.180716.001 1809150000 release-keys" \
-    DEVICE_MAINTAINERS="Ryan (liquid0624)"
+    PRIVATE_BUILD_DESC="OnePlus6-user 8.1.0 OPM1.171019.011 273 release-keys"
 
-BUILD_FINGERPRINT := OnePlus/OnePlus6/OnePlus6:9/PKQ1.180716.001/1809150000:user/release-keys
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
+    ro.product.model
+
+BUILD_FINGERPRINT := OnePlus/OnePlus6/OnePlus6:8.1.0/OPM1.171019.011/06140300:user/release-keys
