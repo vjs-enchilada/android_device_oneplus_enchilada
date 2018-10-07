@@ -28,6 +28,7 @@ PRODUCT_NAME := lineage_enchilada
 PRODUCT_DEVICE := enchilada
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
+PRODUCT_RELEASE_NAME := enchilada
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
