@@ -1,0 +1,12 @@
+[
+  { "repository":  "nathanchance/op6",
+    "target_path": "kernel/oneplus/enchilada",
+    "branch":      "9.0"
+  },
+  {
+    "repository"  : "LineageOS/android_packages_resources_devicesettings",
+    "target_path" : "packages/resources/devicesettings",
+    "branch"      : "lineage-16.0"
+  }
+]
+
