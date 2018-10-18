@@ -83,4 +83,7 @@
 
     <!-- Period of time in which to consider light samples in milliseconds. -->
     <integer name="config_autoBrightnessAmbientLightHorizon">10000</integer>
+
+    <!-- Screen off delay -->
+    <integer name="config_screen_off_delay">1800</integer>
 </resources>
