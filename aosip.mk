@@ -24,6 +24,10 @@ $(call inherit-product, device/oneplus/enchilada/device.mk)
 # Inherit some common AOSiP stuff.
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
+# Maintainer Prop
+PRODUCT_BUILD_PROP_OVERRIDES += \
+DEVICE_MAINTAINERS="Anirudh Gupta"
+
 PRODUCT_NAME := aosip_enchilada
 PRODUCT_DEVICE := enchilada
 PRODUCT_MANUFACTURER := OnePlus
