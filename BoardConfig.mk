@@ -28,3 +28,6 @@ TARGET_KERNEL_CONFIG := flash_defconfig
 
 # inherit from the proprietary version
 -include vendor/oneplus/enchilada/BoardConfigVendor.mk
+
+# Support STA
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
